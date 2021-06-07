@@ -26,7 +26,7 @@ Corruption robustness of spatial-temporal models trained on clean Mini Kinetics 
 
 
 For fair comparison, it is recommended to submit the result of approach which follows the following settings:
-Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level.
+Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level. Any result on our benchmark can be submitted via pull request.
 
 ## Mini SSV2-C
 ![image info](assets/mini_ssv2-c_samples.jpg)
@@ -51,5 +51,5 @@ Corruption robustness of spatial-temporal models trained on clean Mini SSV2 and 
 
 
 For fair comparison, it is recommended to submit the result of approach which follows the following settings:
-Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level.
+Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level. Any result on our benchmark can be submitted via pull request.
 
