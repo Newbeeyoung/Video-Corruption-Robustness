@@ -17,10 +17,10 @@ Corruption robustness of spatial-temporal models trained on clean Mini Kinetics 
 
 | Approach | Reference | Backbone | Input Length| Sampling Method | Clean Accuracy |mPC | rPC |
 | --- |--- |--- |--- |--- |--- |--- |--- |
-|[3D ResNet-50](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-50|32|Uniform|73.0|59.2|81.1|
+|[3D ResNet](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-50|32|Uniform|73.0|59.2|81.1|
 | [I3D](https://github.com/deepmind/kinetics-i3d)| [J. Carreira et al.](https://arxiv.org/abs/1705.07750)| InceptionV1|32|Uniform|70.5|57.7|81.8|
 |[SlowFast 8x4](https://github.com/facebookresearch/SlowFast)| [C. Feichtenhofer at al.](https://arxiv.org/abs/1812.03982) |ResNet-50|32|Uniform|69.2|54.3|78.5|
-|[3D ResNet-50](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-18|32|Uniform|66.2|53.3|80.5|
+|[3D ResNet](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-18|32|Uniform|66.2|53.3|80.5|
 |[TAM](https://github.com/IBM/bLVNet-TAM)| [Q.Fan et al.](https://arxiv.org/abs/1912.00869) |ResNet-50|32|Uniform|66.9|50.8|75.9|
 |[X3D-M](https://github.com/facebookresearch/SlowFast)| [C. Feichtenhofer](https://arxiv.org/abs/2004.04730) |ResNet-50|32|Uniform|62.6|48.6|77.6
 
@@ -42,9 +42,9 @@ Corruption robustness of spatial-temporal models trained on clean Mini SSV2 and 
 | Approach | Reference | Backbone | Input Length| Sampling Method | Clean Accuracy |mPC | rPC |
 | --- |--- |--- |--- |--- |--- |--- |--- |
 | [I3D](https://github.com/deepmind/kinetics-i3d)| [J. Carreira et al.](https://arxiv.org/abs/1705.07750)| InceptionV1|32|Uniform|58.5|47.8|81.7|
-|[3D ResNet-50](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-50|32|Uniform|57.4|46.6|81.2|
+|[3D ResNet](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-50|32|Uniform|57.4|46.6|81.2|
 |[TAM](https://github.com/IBM/bLVNet-TAM)| [Q.Fan et al.](https://arxiv.org/abs/1912.00869) |ResNet-50|32|Uniform|61.8|45.7|73.9|
-|[3D ResNet-50](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-18|32|Uniform|53.0|42.6|80.3|
+|[3D ResNet](https://github.com/kenshohara/3D-ResNets-PyTorch)| [K. Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/html/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.html)|ResNet-18|32|Uniform|53.0|42.6|80.3|
 |[X3D-M](https://github.com/facebookresearch/SlowFast)| [C. Feichtenhofer](https://arxiv.org/abs/2004.04730) |ResNet-50|32|Uniform|49.9|40.7|81.6|
 |[SlowFast 8x4](https://github.com/facebookresearch/SlowFast)| [C. Feichtenhofer at al.](https://arxiv.org/abs/1812.03982) |ResNet-50|32|Uniform|48.7|38.4|78.8|
 
