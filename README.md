@@ -1,6 +1,6 @@
 # Benchmarking the robustness of Spatial-Temporal Models
 
-This repositery contains the code for the paper **Benchmarking the Robustness of Spatial-TemporalModels Against Corruptions**.
+This repositery contains the code for the paper **Benchmarking the Robustness of Spatial-Temporal Models Against Corruptions**.
 
 Python 2.7 and 3.7, Pytorch 1.7+, FFmpeg are required.
 
@@ -55,3 +55,12 @@ Corruption robustness of spatial-temporal models trained on clean Mini SSV2 and 
 For fair comparison, it is recommended to submit the result of approach which follows the following settings:
 Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level. Any result on our benchmark can be submitted via pull request.
 
+## Training and Evaluation
+
+To help researchers reproduce the benchmark results provided in our leaderboard, we include a simple framework for training and evaluating the spatial-temporal models in the folder: benchmark_framework.
+
+### Requirements
+
+```buildoutcfg
+pip install - requirement.txt
+```
