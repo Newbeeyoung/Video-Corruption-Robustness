@@ -4,6 +4,11 @@ This repositery contains the code for the paper **Benchmarking the Robustness of
 
 Python 2.7 and 3.7, Pytorch 1.7+, FFmpeg are required.
 
+### Requirements
+
+```buildoutcfg
+pip3 install - requirements.txt
+```
 ## Mini Kinetics-C
 ![image info](assets/mini_kinetics-c_samples.jpg)
 
@@ -59,8 +64,32 @@ Backbone of ResNet-50, Input Length of 32, Uniform Sampling at Clip Level. Any r
 
 To help researchers reproduce the benchmark results provided in our leaderboard, we include a simple framework for training and evaluating the spatial-temporal models in the folder: benchmark_framework.
 
-### Requirements
+## Running the code
 
+Assume the structure of data directories is the following:
+
+```misc
+~/
+  datadir/
+    mini_kinetics/
+      train/
+        .../ (directories of class names)
+          ...(hdf5 file containing video frames)
+    mini_kinetics-c/
+      .../ (directories of corruption names)
+        .../ (directories of severity level)
+          .../ (directories of class names)
+            ...(hdf5 file containing video frames)
+```
+Train I3D on the Mini Kinetics dataset with 4 GPUs and 16 CPU threads (for data loading). The input lenght is 32, the batch size is 32 and learning rate is 0.01.
 ```buildoutcfg
-pip install - requirement.txt
+python3 new_train.py --threed_data --dataset mini_kinetics400 --frames_per_group 1 --groups 32 --logdir snapshots/ \
+--lr 0.01 --backbone_net i3d -b 32 -j 16 --cuda 0,1,2,3
+
+```
+Test I3D on the Mini Kinetics-C dataset (pretrained model is loaded)
+```buildoutcfg
+python3 test_corruption.py --threed_data --dataset mini_kinetics400 --frames_per_group 1 --groups 32 --logdir snapshots/ \
+--pretrained snapshots/mini_kinetics400-rgb-i3d_v2-ts-max-f32-cosine-bs32-e50-v1/model_best.pth.tar --backbone_net i3d -b 32 -j 16 -e --cuda 0,1,2,3
+
 ```
