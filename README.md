@@ -83,7 +83,7 @@ Assume the structure of data directories is the following:
 ```
 Train I3D on the Mini Kinetics dataset with 4 GPUs and 16 CPU threads (for data loading). The input lenght is 32, the batch size is 32 and learning rate is 0.01.
 ```buildoutcfg
-python3 new_train.py --threed_data --dataset mini_kinetics400 --frames_per_group 1 --groups 32 --logdir snapshots/ \
+python3 train.py --threed_data --dataset mini_kinetics400 --frames_per_group 1 --groups 32 --logdir snapshots/ \
 --lr 0.01 --backbone_net i3d -b 32 -j 16 --cuda 0,1,2,3
 
 ```
