@@ -1,7 +1,7 @@
 # Benchmarking the robustness of Spatial-Temporal Models
 
-This repositery contains the code for **NeurIPs 
-Benchmark and Dataset Track 2021 paper - Benchmarking the Robustness of Spatial-Temporal Models Against Corruptions**.
+This repositery contains the code for [**NeurIPs 
+Benchmark and Dataset Track 2021 paper - Benchmarking the Robustness of Spatial-Temporal Models Against Corruptions**](https://arxiv.org/abs/2110.06513).
 
 Python 2.7 and 3.7, Pytorch 1.7+, FFmpeg are required.
 
